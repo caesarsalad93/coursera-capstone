@@ -4,6 +4,26 @@
   padding: 2rem;
   text-align: center;
 }
+nav {
+  display: flex;
+}
+nav ul li {
+  padding: 1em;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.doormatList, .contactsList, .socialsList {
+  display: flex;
+  flex-direction: column;
+}
 
 .logo {
   height: 6em;

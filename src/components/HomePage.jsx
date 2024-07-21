@@ -4,7 +4,7 @@ import Footer from "./Footer";
 const HomePage = () => {
     return (
         <>
-            <Nav />
+            <Nav section="topNav"/>
             <Footer />
         </>
     )

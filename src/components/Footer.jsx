@@ -1,4 +1,5 @@
 import footerImage from "../assets/restauranfood.jpg";
+import Nav from "./Nav";
 
 const Footer = () => {
     return (
@@ -8,14 +9,7 @@ const Footer = () => {
             </div>
            
             <div className="doormat">
-                <ul className="doormatList">
-                    <li><a href="./home">HOME</a></li>
-                    <li><a href="./home">ABOUT</a></li>
-                    <li><a href="./home">MENU</a></li>
-                    <li><a href="./home">RESERVATIONS</a></li>
-                    <li><a href="./home">ORDER ONLINE</a></li>
-                    <li><a href="./home">LOGIN</a></li>
-                </ul>
+                <Nav section="bottomNav"/>
             </div>
             <div className="contactsList">
                 <span>Contact</span>

@@ -1,13 +1,15 @@
-import { useState } from 'react'
 import './App.css'
 import Footer from './components/Footer'
 import Nav from './components/Nav'
+import {Routes, Route} from 'react-router-dom'
+import HomePage from './components/HomePage'
 
 function App() {
   return (
     <>
-      <Nav />
-      <Footer />
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+    </Routes>
     </>
   )
 }

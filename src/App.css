@@ -4,6 +4,48 @@
   padding: 2rem;
   text-align: center;
 }
+h1, h2, p {
+  margin: 0;
+}
+h1 {
+  font-family: "Markazi Text", serif;
+  font-size: 64px;
+}
+h2 {
+  font-family: "Markazi Text", serif;
+  font-size: 40px;
+}
+
+p {
+  font-family: "karla";
+  font-size: 18px;
+}
+
+button {
+  background-color: #F4CE14;
+  font-family: "karla";
+  font-weight: 700;
+  width: 200px;
+  margin-top: auto;
+  margin-bottom: 2em;
+}
+
+.callToActionContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #495E57;
+}
+
+.ctaImg {
+  margin: 2em 0;
+}
+
+.chicagoContainer {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
 .topNav {
   display: flex;
   align-items: center;

@@ -9,7 +9,7 @@ const Nav = ({ section }) => {
             <Link to="/" className="nav-item">HOME</Link>
             <Link to="/" className="nav-item">ABOUT</Link>
             <Link to="/" className="nav-item">MENU</Link>
-            <Link to="/" className="nav-item">RESERVATIONS</Link>
+            <Link to="/reservations" className="nav-item">RESERVATIONS</Link>
             <Link to="/" className="nav-item">ORDER ONLINE</Link>
             <Link to="/" className="nav-item">LOGIN</Link>
         </nav>

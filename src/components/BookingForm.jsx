@@ -1,10 +1,15 @@
 import { useState, useEffect } from "react";
-const BookingForm = ({availableTimes, setAvailableTimes}) => {
+const BookingForm = ({availableTimes, dispatch}) => {
    console.log(availableTimes);
   const [date, setDate] = useState("");
   const [time, setTime] = useState("17:00");
   const [guests, setGuests] = useState(1);
   const [occasion, setOccasion] = useState("Birthday");
+
+  const handleDateChange = (e) => {
+   setDate(e.target.value);
+   dispatch({ type: 'UPDATE_TIMES', payload: e.target.value });
+ };
   
 
 
@@ -20,9 +25,7 @@ const BookingForm = ({availableTimes, setAvailableTimes}) => {
       <label htmlFor="res-date">Choose date</label>
       <input
         value={date}
-        onChange={(e) => {
-          setDate(e.target.value);
-        }}
+        onChange={handleDateChange}
         type="date"
         id="res-date"
       ></input>

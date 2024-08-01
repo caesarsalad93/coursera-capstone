@@ -3,17 +3,25 @@ import Footer from "./components/Footer";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import BookingPage from "./components/BookingPage";
-import { useState } from "react";
+import { useState, useReducer } from "react";
 
-function App() {
-  const [availableTimes, setAvailableTimes] = useState([
+const updateTimes = (state, action) => {
+  return state;
+};
+
+const initializeTimes = () => {
+  return [
     "17:00",
     "18:00",
     "19:00",
     "20:00",
     "21:00",
     "22:00",
-  ]);
+  ];
+};
+function App() {
+
+  const [availableTimes, dispatch] = useReducer(updateTimes, null, initializeTimes);
 
   return (
     <>
@@ -25,7 +33,7 @@ function App() {
           element={
             <BookingPage
               availableTimes={availableTimes}
-              setAvailableTimes={setAvailableTimes}
+              dispatch={dispatch}
             />
           }
         />

@@ -1,9 +1,9 @@
 import BookingForm from "./BookingForm"
-const BookingPage = ({availableTimes, setAvailableTimes}) => {
+const BookingPage = ({availableTimes, dispatch}) => {
     return (
         <BookingForm 
         availableTimes={availableTimes}
-        setAvailableTimes={setAvailableTimes}
+        dispatch={dispatch}
         />
     )
 }

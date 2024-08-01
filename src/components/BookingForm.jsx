@@ -1,10 +1,12 @@
-import { useState } from "react";
-const BookingForm = () => {
+import { useState, useEffect } from "react";
+const BookingForm = ({availableTimes, setAvailableTimes}) => {
+   console.log(availableTimes);
   const [date, setDate] = useState("");
   const [time, setTime] = useState("17:00");
   const [guests, setGuests] = useState(1);
-  const [occasion, setOccasion] = useState("");
-  const [availableTimes, setAvailableTimes] = useState(['17:00', '18:00', '19:00', '20:00', '21:00', '22:00']);
+  const [occasion, setOccasion] = useState("Birthday");
+  
+
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -32,7 +34,7 @@ const BookingForm = () => {
           setTime(e.target.value);
         }}
       >
-         {availableTimes.map((time) => (
+         {availableTimes && availableTimes.map((time) => (
             <option key={time} value={time}>
                {time}
             </option>
@@ -42,7 +44,7 @@ const BookingForm = () => {
       <input
         value={guests}
         onChange={(e) => {
-          setGuests(e.target.value);
+          setGuests(Number(e.target.value));
         }}
         type="number"
         placeholder="1"

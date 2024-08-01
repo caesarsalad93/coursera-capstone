@@ -3,12 +3,12 @@ import Footer from "./Footer";
 import CallToAction from "./CallToAction";
 import Chicago from "./Chicago";
 import BookingForm from "./BookingForm";
+import BookingPage from "./BookingPage";
 
 const HomePage = () => {
     return (
         <>
             <Nav section="topNav"/>
-            <BookingForm />
             <CallToAction />
             <Footer />
         </>

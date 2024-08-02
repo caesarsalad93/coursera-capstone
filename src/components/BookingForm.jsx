@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
+import { fetchAPI, submitAPI } from "../api";
 const BookingForm = ({availableTimes, dispatch}) => {
-   console.log(availableTimes);
   const [date, setDate] = useState("");
   const [time, setTime] = useState("17:00");
   const [guests, setGuests] = useState(1);
@@ -11,7 +11,9 @@ const BookingForm = ({availableTimes, dispatch}) => {
    dispatch({ type: 'UPDATE_TIMES', payload: e.target.value });
  };
   
+useEffect(() => {
 
+})
 
   const handleSubmit = (event) => {
     event.preventDefault();

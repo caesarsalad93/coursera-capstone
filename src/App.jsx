@@ -4,20 +4,19 @@ import { Routes, Route } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import BookingPage from "./components/BookingPage";
 import { useState, useReducer } from "react";
+import { fetchAPI, submitAPI } from "./api";
 
 const updateTimes = (state, action) => {
-  return state;
+  const selectedDate = new Date(action.payload);
+  const newTimes = fetchAPI(selectedDate);
+  console.log(newTimes);
+  return newTimes;
 };
 
 const initializeTimes = () => {
-  return [
-    "17:00",
-    "18:00",
-    "19:00",
-    "20:00",
-    "21:00",
-    "22:00",
-  ];
+  const today = Date.now();
+  const todaysDate = new Date(today)
+  return fetchAPI(todaysDate);
 };
 function App() {
 

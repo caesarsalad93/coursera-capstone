@@ -36,6 +36,13 @@ button {
   margin-bottom: 2em;
 }
 
+button:disabled {
+  background-color: #e0e0e0; /* Light gray background */
+  color: #a0a0a0;           /* Gray text */
+  cursor: not-allowed;      /* Change cursor to indicate the element is disabled */
+  opacity: 0.6;             /* Make the element appear more faded */
+}
+
 .callToActionContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;

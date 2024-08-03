@@ -37,6 +37,7 @@ useEffect(() => {
         onChange={handleDateChange}
         type="date"
         id="res-date"
+        required
       ></input>
       <label htmlFor="res-time">Choose time</label>
       <select
@@ -45,6 +46,7 @@ useEffect(() => {
         onChange={(e) => {
           setTime(e.target.value);
         }}
+        required
       >
          {availableTimes && availableTimes.map((time) => (
             <option key={time} value={time}>
@@ -74,8 +76,9 @@ useEffect(() => {
       >
         <option>Birthday</option>
         <option>Anniversary</option>
+        <option>Celebrating life</option>
       </select>
-      <input type="submit" value="Make Your reservation"></input>
+      <input type="submit" value="Make Your reservation" disabled={!date}></input>
     </form>
   );
 };

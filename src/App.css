@@ -52,6 +52,13 @@ button {
   flex-direction: column;
 }
 
+.confirmation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
 .topNav {
   display: flex;
   align-items: center;

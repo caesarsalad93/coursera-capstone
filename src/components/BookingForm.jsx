@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { fetchAPI, submitAPI } from "../api";
-const BookingForm = ({availableTimes, dispatch}) => {
+
+const BookingForm = ({availableTimes, dispatch, submitForm}) => {
   const [date, setDate] = useState("");
   const [time, setTime] = useState("17:00");
   const [guests, setGuests] = useState(1);
@@ -17,6 +17,13 @@ useEffect(() => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    const formData = {
+      date,
+      time,
+      guests,
+      occasion,
+    };
+    submitForm(formData);
     alert(
       `Reservation made for ${date}, at ${time}, for ${guests}, for someone special's ${occasion}`
     );

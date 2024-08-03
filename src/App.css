@@ -1,7 +1,4 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 h1, h2, p {
@@ -47,6 +44,7 @@ button:disabled {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #495E57;
+  margin: 0 10%;
 }
 
 .ctaImg {
@@ -66,15 +64,21 @@ button:disabled {
   height: 100%;
 }
 
+.navItem {
+  color: white;
+}
+
 .topNav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0 10%;
 }
 
 footer {
   display: flex;
   justify-content: space-between;
+  margin: 0 10%;
 }
 
 .bottomNav, .contactsList, .socialsList {

@@ -2,8 +2,10 @@
   text-align: center;
 }
 
-.callToActionContainer, .specialsContainer, .topNav, footer {
+.callToActionContainer, .chefsContainer, .specialsContainer, .topNav, footer {
   margin: 0 15%;
+  gap: 20px;
+  padding: 20px;
 }
 a.reserveButton {
   color: #242424;
@@ -48,17 +50,52 @@ button:disabled {
 }
 
 .callToActionContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   background-color: #495E57;
+}
+.chefsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #495E57;
+}
 
+.chefsImage {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chefsImage img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.chefsText {
+  flex: 1;
+  min-width: 300px;
 }
 
 .ctaImg {
-  margin: 2em 0;
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
+.ctaImg img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
 .chicagoContainer {
+  flex: 1;
+  min-width: 300px;
   text-align: left;
   display: flex;
   flex-direction: column;

@@ -1,6 +1,13 @@
 #root {
   text-align: center;
 }
+
+.callToActionContainer, .specialsContainer, .topNav, footer {
+  margin: 0 15%;
+}
+a.reserveButton {
+  color: #242424;
+}
 h1, h2, p {
   margin: 0;
 }
@@ -44,7 +51,7 @@ button:disabled {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #495E57;
-  margin: 0 10%;
+
 }
 
 .ctaImg {
@@ -64,21 +71,84 @@ button:disabled {
   height: 100%;
 }
 
+.itemCard {
+  height: 440px;
+  width: 260px;
+  margin: 0 2em;
+}
+
+.itemCTA {
+  display: flex;
+
+  font-family: "karla";
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.itemHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.itemImg {
+  height: 185px;
+  width: 265px;
+}
+
+.itemPrice {
+  font-family: "karla";
+  color: #EE9972;
+  font-size: 16px;
+}
+
+.itemText {
+  font-family: "karla";
+  font-size: 16;
+  text-align: left;
+  margin: 1em 0;
+}
+
+.itemTitle {
+  font-family: "Markazi Text", serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logoImg {
+  width: 1em;
+  height: 1em;
+  vertical-align: bottom;
+}
+
 .navItem {
   color: white;
+}
+
+.reserveButton {
+  display: inline-block;
+}
+
+.specialsContainer {
+}
+
+.specialsItems {
+  display: flex;
+  justify-content: space-between;
+}
+.specialsHeader {
+  display: flex;
 }
 
 .topNav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 10%;
 }
 
 footer {
   display: flex;
   justify-content: space-between;
-  margin: 0 10%;
 }
 
 .bottomNav, .contactsList, .socialsList {

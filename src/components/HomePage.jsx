@@ -1,18 +1,18 @@
 import Nav from "./Nav";
 import Footer from "./Footer";
 import CallToAction from "./CallToAction";
-import Chicago from "./Chicago";
-import BookingForm from "./BookingForm";
-import BookingPage from "./BookingPage";
+import Specials from "./Specials";
+import ItemCard from "./ItemCard";
 
 const HomePage = () => {
-    return (
-        <>
-            <Nav section="topNav"/>
-            <CallToAction />
-            <Footer />
-        </>
-    )
-}
+  return (
+    <>
+      <Nav section="topNav" />
+      <CallToAction />
+      <Specials />
+      <Footer />
+    </>
+  );
+};
 
 export default HomePage;

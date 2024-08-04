@@ -2,9 +2,10 @@ import { Link } from "react-router-dom";
 
 const ReserveTable = () => {
   return (
-    <Link to="/reservations">
-      <button>Reserve A Table</button>
-    </Link>
+
+      <button>
+            <Link className="reserveButton" to="/reservations">Reserve A Table</Link>
+      </button>
   );
 };
 
